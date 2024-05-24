@@ -22,7 +22,7 @@ This will spin up the server at `http://localhost:8000` with a local SQLite data
 
 - `POST /api/users/`: Create a new user.
 
-To create a user, send a POST request to `http://localhost:8000/api/app/multiprocessing` with the following JSON payload:
+To create a user, send a POST request to `http://localhost:8000/docs#/default/add_numbers_add_post` with the following JSON payload:
 
 ```json
 {
