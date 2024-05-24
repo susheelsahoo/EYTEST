@@ -11,7 +11,7 @@ async def add_numbers(addition_request: AdditionRequest):
     try:
         logger.info("Received request: %s", addition_request.json())
         start_time = datetime.now()  # Record start time
-        result = process_addition(addition_request.numbers)
+        result = process_addition(addition_request.payload)
         end_time = datetime.now()  # Record end time
         duration = end_time - start_time
         logger.info("Computed result: %s", result)
