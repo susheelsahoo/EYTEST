@@ -14,19 +14,19 @@ To run the server, use the following command:
 $ uvicorn app.main:app --host localhost --port 8000 --reload
 ```
 
-This will spin up the server at `http://localhost:8000` with a local SQLite database `users.db`.
+This will spin up the server at `http://localhost:8000` with a local SQLite database `AdditionRequest.db`.
 
 ## API Endpoints
 
 ### Create User
 
-- `POST /api/users/`: Create a new user.
+- `POST /add`: Create a new user.
 
-To create a user, send a POST request to `http://localhost:8000/docs#/default/add_numbers_add_post` with the following JSON payload:
+To create a user, send a POST request to `http://localhost:8000/add` with the following JSON payload:
 
 ```json
 {
-    "batchid": "id0101",
+    "batch_id": "id0101",
     "payload": [[1, 2], [3, 4]]
    
 }
@@ -41,6 +41,5 @@ To run the Unit Tests, from the root of the repo run
 $ pytest 
 ```
 
-This will spin up a test database in SQLite `test_db.db`, run the tests and then tear down the database. 
 
 You can use `pytest -v` for verbose output and `pytest -s` to disable output capture for better debugging.

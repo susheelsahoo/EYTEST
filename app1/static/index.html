@@ -6,7 +6,6 @@
     <title>Addition API</title>
     <script>
         async function sendAdditionRequest() {
-            const batch_id = document.getElementById('batch_id').value;
             const input = document.getElementById('inputField').value;
             const numberPairs = JSON.parse(input);
 
@@ -15,7 +14,7 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ numbers: numberPairs, batch_id: batch_id, })
+                body: JSON.stringify({ numbers: numberPairs })
             });
 
             if (response.ok) {
@@ -29,8 +28,6 @@
 </head>
 <body>
     <h1>Addition API</h1>
-    <label for="inputField">Batch ID:</label>
-    <input type="text" id="batch_id" name="batch_id"><br/>
     <label for="inputField">Enter list of number pairs (e.g., [[3,1],[4,5]]):</label>
     <input type="text" id="inputField" name="inputField">
     <button onclick="sendAdditionRequest()">Submit</button>

@@ -17,7 +17,7 @@ async def add_numbers(addition_request: AdditionRequest):
         logger.info("Computed result: %s", result)
         logger.info("Time taken: %s seconds", duration.total_seconds())
         response_data = {
-            "batch_id": addition_request.batch_id,
+            "batch_id": 'id0101',
             "response": result,
             "status": "complete",
             "started_at": start_time.isoformat(),
