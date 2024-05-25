@@ -7,6 +7,7 @@ def test_process_addition():
     # Test with normal input
     assert process_addition([[3, 1], [4, 5]]) == [4, 9]
 
+
     # Test with empty input
     assert process_addition([]) == []
 

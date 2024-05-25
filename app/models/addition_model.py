@@ -5,6 +5,5 @@ class AdditionRequest(BaseModel):
     batch_id: str
     payload: List[List[int]]
     
-
 class AdditionResponse(BaseModel):
     results: List[int]

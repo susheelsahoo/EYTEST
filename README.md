@@ -19,7 +19,6 @@ This will spin up the server at `http://localhost:8000` with a local SQLite data
 ## API Endpoints
 
 ### Create User
-
 - `POST /add`: Create a new user.
 
 To create a user, send a POST request to `http://localhost:8000/add` with the following JSON payload:

@@ -6,6 +6,7 @@ from datetime import datetime
 
 router = APIRouter()
 
+
 @router.post("/add")
 async def add_numbers(addition_request: AdditionRequest):
     try:

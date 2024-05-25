@@ -10,6 +10,7 @@
             const input = document.getElementById('inputField').value;
             const numberPairs = JSON.parse(input);
 
+            
             const response = await fetch('/add', {
                 method: 'POST',
                 headers: {
