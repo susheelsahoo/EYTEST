@@ -1,3 +1,11 @@
+#### Create Vertual env
+
+you can create a virtual environment and then install the dependencies using the following command:
+
+```shell
+$ python3 -m venv .venv  
+```
+
 #### Pip
 
 If you prefer using `pip`, you can create a virtual environment and then install the dependencies using the following command:
@@ -21,7 +29,7 @@ This will spin up the server at `http://localhost:8000` with a local SQLite data
 ### Create User
 - `POST /add`: Create a new user.
 
-To create a user, send a POST request to `http://localhost:8000/add` with the following JSON payload:
+To create a user, send a POST request to `http://localhost:8000/docs#/default/add_numbers_add_post` with the following JSON payload:
 
 ```json
 {
